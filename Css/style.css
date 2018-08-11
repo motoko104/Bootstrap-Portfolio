@@ -5,6 +5,10 @@ body{
     background-image: url(Images/background.png);
     background-repeat: repeat;
 }
+/* Header CSS*/
+.col-8{
+    left: 10%;
+}
 .container-fluid{
     background-color: #ffffff;
     padding: 0px;
@@ -12,7 +16,6 @@ body{
     border-width: 0px 0px 2px 0px;
     border-color: #cccccc;
 }
-
 .navbar-light{
     text-align: left;
     margin: 0;
@@ -20,51 +23,41 @@ body{
     color: white;
     left:18%;
 }
-/*
-.navbar-nav{
-    display: inline;
-}*/
 span.navbar-brand{
-    background-color: #4aaaa5;
     color: white;
+}
+.header{
+    font-family: 'Georgia', Times, Times New Roman,sans-serif;
+    color: white;
+    padding: 17px 30px;
+    margin: 0 auto;
+    background-color: #4aaaa5;
+}
+.navigation{
+    display: inline;
+    position: relative;
+    top: -40px;
+    left: 90%;
+    min-width: 200px;
 
 }
-@media screen and (max-width:760px){
-    span.navbar-brand{
-        margin: 0px auto;
-    }
-    .navbar-brand{
-        position: relative;
-        left: -17%;
-    }
-}
-@media screen and (max-width:400px){
-    .navbar-brand{
-        position: relative;
-        width: 100%;
-        left: -60px;
-    }
-    h1{
-        width: 100%;
-    }
-}
-/*.link{
-    padding: 5px 5px;
+.nav-item{
     display: inline;
+    padding: 5px 5px;
     border-style: solid;
     border-width: 0px 1px 0px 0px;
     border-color: #cccccc;
+
+}
+.nav-link{
+    padding: 5px 10px;
+    display: inline;
     color: #777777;
 }
-.nav-item{
-    display:inline;
-}*/
-h1{
-    font-family: 'Georgia', Times, Times New Roman,sans-serif;
-    color: white;
-    padding: 15px 30px;
-    margin: 0 auto;
+.navbar-nav{
+    display: inline;
 }
+/*About/Portfolio/Contact CSS*/
 h2{
     color: #4aaaa5;
     font-family: 'Georgia', Times, Times New Roman,sans-serif;
@@ -74,15 +67,16 @@ h2{
     padding: 15px 20px;
     margin: 10px 10px;
 }
-/*.container{
+.container{
     padding: 30px 0px 0px 0px;
     max-width: 960px;
+    margin: 0 auto;
 }
 .card-img-top{
     float: left;
     padding: 10px 20px;
-    max-width: 240px;
-    max-height: 300px;
+    width: 240px;
+    height: 300px;
     border-radius: .25em;
 }
 .card-body{
@@ -91,18 +85,81 @@ h2{
 p{
     padding: 0px 20px;
     text-indent: 30px;
-}*/
+}
+.card-img{
+    width: 450px;
+    height: 400px;
+    padding: 20px;
+}
+.card{
+    display: inline-block;
+    border-style: none;
+}
+.row{
+    margin-right: -10px;
+    margin-left: 0px;
+    width: 960px;
+}
+.card-title-port{
+    position: absolute;
+    left: 35px;
+    top: 300px;
+    background-color: #4aaaa5;
+    margin: 0px auto;
+    padding: 20px 150px;
+}
+/*Footer*/
 small{
     color: white;
     padding: 5px 15px;
 }
-/*span.navbar-brand{
-    text-align: center;
-    background-color: #777777;
-}*/
 .navbar-light-bottom{
     border-style: solid;
     border-color: #4aaaa5;
     border-width: 2px 0px 0px 0px;
     background-color: #777777;
+}
+.footer{
+    position: static;
+    min-width: 100px;
+    display: inline-block;
+    width: 100%;
+}
+/* Smaller Screen Size CSS*/
+@media screen and (max-width:760px){
+    span.navbar-brand{
+        width: 100%;
+    }
+    .navbar-brand{
+        position: relative;
+        margin: 0px auto;
+        left: -20px;
+    }
+    .navigation{
+        position: initial;
+        margin: 0px auto;
+    }
+    .navbar-nav{
+        left: 20px;
+    }
+    .header{
+        width: 100%;
+        padding: 15px;
+    }
+    .container{
+        width: 100%;
+    }
+    p{
+        display: inline-block;
+        width: 100%;
+        padding: 15px;
+    }
+    .card-img-top{
+        width: 100%;
+        height: auto;
+        margin: 0px auto;
+    }
+    .col-8{
+        max-width: 100%;
+    }
 }

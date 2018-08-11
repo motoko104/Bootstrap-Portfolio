@@ -11,78 +11,86 @@
 <body>
     <!--Navigation Bar-->
     <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="col-2"></div>
-                    <div class="col-6">
-                        <a class="navbar-brand" href="index.html"><h1>Amanda Padilla</h1></a>
-                        </button>
-                    </div>
-                    <div class="col-4">
-                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item active">
-                            <a class="nav-link" href="index.html">About</a>
-                            </li>
-                            <li class="nav-item active">
-                            <a class="nav-link" href="portfolio.html">Portfolio<span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                            </li>
-                        </ul>
-                        </div>
-                    </div>
+        <div class="col-2"></div> 
+        <div class="col-8">           
+            <nav class="navbar">
+                <span class="navbar-brand"><h1 class= "header">Amanda Padilla</h1></span>
             </nav>
+            <div class="navigation">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        <div class="col-2"></div>
     </div>
     <!--Portfolio items-->
     <div class="container">
         <div class="card">
             <div class="card-header">
-            Portfolio
+           <h2>Portfolio</h2>
             </div>
-            <div class="card bg-dark text-white">
-                    <img class="card-img" src="Css/Images/ph1.jpg" alt="Black Cat Nero">
-                    <div class="card-img-overlay">
-                    <h5 class="card-title">Word Guess</h5>
-                    </div>
+            <div class="row">
+                <div class="card text-white col-6">
+                        <img class="card-img" src="Css/Images/ph1.jpg" alt="Black Cat Nero">
+                        <div class="card-img-overlay">
+                        <h5 class="card-title-port">Word Guess</h5>
+                        </div>
+                </div>
+                <div class="card text-white col-6">
+                        <img class="card-img" src="Css/Images/ph2.jpg" alt="Black Cat Atlas">
+                        <div class="card-img-overlay">
+                        <h5 class="card-title-port">RPG Game</h5>
+                        </div>
+                </div>
             </div>
-            <div class="card bg-dark text-white">
-                    <img class="card-img" src="Css/Images/ph2.jpg" alt="Black Cat Atlas">
-                    <div class="card-img-overlay">
-                    <h5 class="card-title">RPG Game</h5>
-                    </div>
+            <div class="row">
+                <div class="card text-white col-6">
+                        <img class="card-img" src="Css/Images/ph3.jpg" alt="White Cat Puff">
+                        <div class="card-img-overlay">
+                        <h5 class="card-title-port">Trivia Game</h5>
+                        </div>
+                </div>
+                <div class="card text-white col-6">
+                        <img class="card-img" src="Css/Images/ph4.jpg" alt="Nero">
+                        <div class="card-img-overlay">
+                        <h5 class="card-title-port">Info Widget</h5>
+                        </div>
+                </div>
             </div>
-            <div class="card bg-dark text-white">
-                    <img class="card-img" src="Css/Images/ph3.jpg" alt="White Cat Puff">
-                    <div class="card-img-overlay">
-                    <h5 class="card-title">Trivia Game</h5>
-                    </div>
-            </div>
-            <div class="card bg-dark text-white">
-                    <img class="card-img" src="Css/Images/ph4.jpg" alt="Nero">
-                    <div class="card-img-overlay">
-                    <h5 class="card-title">Info Widget</h5>
-                    </div>
-            </div>
-            <div class="card bg-dark text-white">
-                    <img class="card-img" src="Css/Images/ph5.jpg" alt="Atlas">
-                    <div class="card-img-overlay">
-                    <h5 class="card-title">Rock Paper Scissors</h5>
-                    </div>
+            <div class="row">
+                <div class="card text-white col-6">
+                        <img class="card-img" src="Css/Images/ph5.jpg" alt="Atlas">
+                        <div class="card-img-overlay">
+                        <h5 class="card-title-port">Rock Paper Scissors</h5>
+                        </div>
+                </div>
+                <div class="col-6">
+                </div>
             </div>
         </div>
     </div>
     <!--Footer-->
-    <div class="containter-fluid">
-            <div class="fixed-bottom">
-                <nav class="navbar navbar-light-bottom">
-                    <div class="col-5"></div>
-                    <div class="col-2">
-                        <span class="navbar-brand mb-0"><small>Copyright &copy;</small></span>
+    <div class="containter-fluid row">
+        <div class="fixed-bottom">
+            <nav class="navbar navbar-light-bottom">
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <div class="footer-bottom-header">
+                        <span class="mb-0"><small class="footer">Copyright &copy;</small></span>
                     </div>
-                    <div class="col-5"></div>
-                </nav>
-            </div>
+                </div>
+                <div class="col-4"></div>
+            </nav>
+        </div>
     </div>
 </body>
 </html>
