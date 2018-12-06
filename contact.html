@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="Css/style.css" type="text/css">    
-    <title>Amanda Padill Contact</title>
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <!--Materialize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Armata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:500" rel="stylesheet">
+    <!--CSS style sheet-->
+    <link rel="stylesheet" href="Css/style.css" type="text/css">
+
+    <title>Amanda Padilla</title>
 </head>
+
 <body>
     <!--Navigation Bar-->
-    <div class="container-fluid">
-        <div class="col-2"></div> 
-        <div class="col-8">           
-            <nav class="navbar">
-                <span class="navbar-brand"><h1 class= "header">Amanda Padilla</h1></span>
-            </nav>
-            <div class="navigation">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-            </div>
+    <nav class="navBar">
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo"> Amanda Padilla </a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">M<i class="material-icons"></i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a class="nav-link" href="index.html">About</a></li>
+                <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                <li><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
         </div>
-        <div class="col-2"></div>
-    </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a class="nav-link" href="index.html">About</a></li>
+        <li><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
     <!--Form-->
     <div class="container-2">
         <div class="card">
@@ -58,18 +66,23 @@
         </div>
     </div>
     <!--Footer-->
-    <div class="containter-fluid row">
-        <div class="fixed-bottom">
-            <nav class="navbar navbar-light-bottom">
-                <div class="col-4"></div>
-                <div class="col-4">
-                    <div class="footer-bottom-header">
-                        <span class="mb-0"><small class="footer">Copyright &copy;</small></span>
+    <div class="containter-fluid">
+            <div class="fixed-bottom">
+                <nav class="navbar navbar-light-bottom">
+                    <div class="col-4"></div>
+                    <div class="col-4">
+                        <div class="footer-bottom-header">
+                            <span class="mb-0"><small class="footer">Copyright &copy;</small></span>
+                        </div>
                     </div>
-                </div>
-                <div class="col-4"></div>
-            </nav>
+                    <div class="col-4"></div>
+                </nav>
+            </div>
         </div>
-    </div>
-</body>
-</html>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <!--Javascript file-->
+        <script src="/app.js"></script>
+    </body>
+    
+    </html>

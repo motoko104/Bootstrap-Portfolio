@@ -1,68 +1,62 @@
 *{
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 body{
-    background-image: url(Images/background.png);
-    background-repeat: repeat;
+    background-image: url(Images/bkground.jpg);
+    background-size: cover;
 }
 /* Header CSS*/
-.col-8{
-    left: 10%;
+nav .brand-logo{
+    position: relative;
+    color: #ecd6b7;
+    left: 20%;
+    margin: 0 auto;
+    padding: 5px 15px;
+    font-family: 'Armata', sans-serif;
 }
-.container-fluid{
-    background-color: #ffffff;
+.brand-logo:hover {
+    color: #c17cd3;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 36px;
+}
+.nav-wrapper{
+    text-decoration: none;
+    background-color:#211920;
     padding: 0px;
     border-style: solid;
     border-width: 0px 0px 2px 0px;
-    border-color: #cccccc;
+    border-color: #864385;
+    margin: 0 auto;
+    color: #ecd6b7;
 }
-.navbar-light{
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    color: white;
-    left:18%;
-}
-span.navbar-brand{
-    color: white;
+nav ul a {
+    text-decoration: none;
+    color: #ecd6b7;
 }
 .header{
-    font-family: 'Georgia', Times, Times New Roman,sans-serif;
-    color: white;
+    font-family: 'Quicksand', sans-serif;
+    color: #ecd6b7;
     padding: 17px 30px;
     margin: 0 auto;
-    background-color: #4aaaa5;
+    text-decoration: none;
 }
-.navigation{
+.right{
+    float: none;
+    position: absolute;
+    left: 60%;
     display: inline;
-    position: relative;
-    top: -40px;
-    left: 90%;
-    min-width: 200px;
-
 }
-.nav-item{
-    display: inline;
-    padding: 5px 5px;
-    border-style: solid;
-    border-width: 0px 1px 0px 0px;
-    border-color: #cccccc;
-
-}
-.nav-link{
-    padding: 5px 10px;
-    display: inline;
-    color: #777777;
-}
-.navbar-nav{
-    display: inline;
+.nav-link:hover{
+    color: #c17cd3;
+    font-size: 20px;
 }
 /*About/Portfolio/Contact CSS*/
 h2{
-    color: #4aaaa5;
-    font-family: 'Georgia', Times, Times New Roman,sans-serif;
+    color:#864385;
+    font-family: 'Quicksand', sans-serif;
     border-style: solid;
-    border-color: #cccccc;
+    border-color:#cccccc;
     border-width: 0px 0px 2px 0px;
     padding: 15px 20px;
     margin: 10px 10px;
@@ -71,6 +65,7 @@ h2{
     padding: 30px 0px 0px 0px;
     max-width: 960px;
     margin: 0 auto;
+    border-radius: 5px 10px 10px 5px; 
 }
 .container-2{
     padding: 5% 12%;
@@ -88,11 +83,13 @@ h2{
 p{
     padding: 0px 20px;
     text-indent: 30px;
+    font-size: 20px;
 }
 .card-img{
     width: 450px;
     height: 400px;
     padding: 20px;
+    border-radius: 10px;
 }
 .card{
     display: inline-block;
@@ -137,17 +134,20 @@ label{
 }
 /*Footer*/
 small{
-    color: white;
-    padding: 5px 15px;
+    color: #ecd6b7;
+    padding: 5px 10px;
 }
 .navbar-light-bottom{
     border-style: solid;
-    border-color: #4aaaa5;
     border-width: 2px 0px 0px 0px;
-    background-color: #777777;
+    border-color: #864385;
+    background-color:#211920;
+    height: 40px;
 }
 .footer{
-    position: static;
+    position: relative;
+    left: 40%;
+    color: #ecd6b7;
     min-width: 100px;
     display: inline-block;
     width: 100%;
@@ -158,28 +158,7 @@ small{
         margin: 0;
         padding: 0;
     }
-    span.navbar-brand{
-        width: 100%;
-    }
-    .navbar-brand{
-        position: static;
-        margin: 0px auto;
-        left: -200px;
-    }
-    .navigation{
-        position: initial;
-        margin: 0px auto;
-    }
-    .navbar-nav{
-        left: 20px;
-    }
-    .header{
-        position: static;
-        
-    }
-    .container, .portfolio{
-        width: 100%;
-    }
+
     p{
         display: inline-block;
         width: 100%;
@@ -192,5 +171,10 @@ small{
     }
     .col-8{
         max-width: 100%;
+    }
+}
+@media screen and (max-width: 414px){
+    nav .brand-logo{
+        font-size: 24px;
     }
 }
