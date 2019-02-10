@@ -29,3 +29,8 @@ Mobile sized screen 425px width
 ![425Contact](/Css/Images/425mobileContact.png)
 
 ![425Portfolio](/Css/Images/425mobilePortfolio.png)
+
+
+### Viewing
+
+If you would like to actually view the page, please visit this link: https://motoko104.github.io/Bootstrap-Portfolio/
